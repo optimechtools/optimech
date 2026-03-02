@@ -10,6 +10,32 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+    .nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.nav-roi-btn {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--bg);
+  background: var(--gold-light);
+  padding: 0.7rem 1.6rem;
+  text-decoration: none;
+  border: 1px solid var(--gold-light);
+  box-shadow: 0 0 18px rgba(201,168,76,0.35);
+  transition: all 0.2s ease;
+}
+
+.nav-roi-btn:hover {
+  background: var(--gold);
+  transform: translateY(-2px);
+  box-shadow: 0 0 26px rgba(201,168,76,0.6);
+}
+
     :root {
       --bg: #0d0d0b;
       --bg2: #131310;
@@ -705,7 +731,11 @@
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">Automate Your Grind</a>
-  <a href="#contact" class="nav-cta">Book a Call</a>
+
+  <div class="nav-actions">
+    <a href="roi.html" class="nav-roi-btn">Calculate Your ROI</a>
+    <a href="#contact" class="nav-cta">Book a Call</a>
+  </div>
 </nav>
 
 <!-- HERO -->
